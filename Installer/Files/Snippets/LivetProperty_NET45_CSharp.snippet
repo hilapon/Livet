@@ -42,7 +42,7 @@ set
 if(_$name$ == value)
 return; 
 _$name$ = value; 
-RaisePropertyChanged();
+RaisePropertyChanged(nameof($name$));
 }
 }
 #endregion

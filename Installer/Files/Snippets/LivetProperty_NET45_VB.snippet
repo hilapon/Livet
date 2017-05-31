@@ -45,7 +45,7 @@ Public Property $name$() As $type$
     Set(ByVal value As $type$)
         If (_$name$ = value) Then Return
         _$name$ = value
-        RaisePropertyChanged()
+        RaisePropertyChanged(NameOf($name$))
     End Set
 End Property
 #End Region

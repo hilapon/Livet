@@ -43,7 +43,7 @@ Public Property $name$() As $type$
         Return _$name$
     End Get
     Set(ByVal value As $type$)
-        If (_$name$ = value) Then Return
+        If (Object.Equals(_$name$, value)) Then Return
         _$name$ = value
         RaisePropertyChanged(NameOf($name$))
     End Set

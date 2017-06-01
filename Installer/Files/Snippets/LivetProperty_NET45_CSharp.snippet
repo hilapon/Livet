@@ -39,7 +39,7 @@ get
 { return _$name$; }
 set
 { $end$
-if(_$name$ == value)
+if(object.Equals(_$name$, value))
 return; 
 _$name$ = value; 
 RaisePropertyChanged(nameof($name$));
